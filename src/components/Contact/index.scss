@@ -1,0 +1,14 @@
+@import '../../global.scss';
+
+#contact {
+    padding-bottom: 70px;
+
+    .info {
+        padding: 20px;
+        background: $profile-background-color;
+        width: 100%;
+        border: 1px solid #dbd9dd;
+        border-radius: .5rem;
+        box-shadow: 2px 6px 7px $profile-shadow-color;
+    }
+}

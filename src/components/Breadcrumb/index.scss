@@ -1,0 +1,50 @@
+@import '../../global.scss';
+
+.breadcrumbs {
+    background: $gray1;
+    padding: 16px 12px;
+
+    h2 {
+        color: $purple;
+        font-size: 24px;
+        font-weight: 400;
+        margin: 0;
+    }
+
+    ol {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 15px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li+li {
+            padding-left: 8px;
+
+            &::before {
+                display: inline-block;
+                padding-right: 8px;
+                color: $dark-blue4;
+                content: "/";
+            }
+        }
+        
+    }
+}
+
+@media (max-width: 768px) {
+    .breadcrumbs {
+        .d-flex {
+            display: block !important;
+        }
+
+        ol {
+            display: block;
+    
+            li {
+                display: inline-block;
+            }
+        }
+    }
+}

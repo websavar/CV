@@ -1,0 +1,84 @@
+@import '../../global.scss';
+
+.portfolio-details {
+    padding-top: 20px;
+
+    .swiper-container {
+        border-radius: 6px;
+    }
+
+    .portfolio-details-slider {
+        img {
+            width: 100%;
+        }
+
+        .swiper-pagination {
+            margin-top: 20px;
+            position: relative;
+
+            .swiper-pagination-bullet {
+                background-color: $white;
+                border: 1px solid $link-color;
+                height: $swiper-bullet-size;
+                opacity: 1;
+                width: $swiper-bullet-size;
+            }
+
+            .swiper-pagination-bullet-active {
+                background-color: $link-color;
+            }
+        }
+    }
+
+    .portfolio-info {
+        background-color: $header-background;
+        box-shadow: 0px 3px 4px $profile-shadow-color, -2px -2px 4px $white;
+        border: 0.0625rem solid rgba(243, 247, 250, 0.05);
+        border-radius: .55rem;
+        padding: 20px;
+
+        h3 {
+            color: $dark-blue2;
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid $gray3;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            font-size: 15px;
+
+            li+li {
+                margin-top: 10px;
+            }
+        }
+    }
+
+    .portfolio-description {
+        margin-top: 20px;
+        overflow: hidden;
+        font-size: 1rem;
+        background-color: $profile-background-color;
+        background-clip: padding-box;
+        border: 1px solid $light-blue;
+        box-shadow: 0px 3px 4px $profile-shadow-color, -2px -2px 4px $white;
+        border-radius: .55rem;
+
+        h3 {
+            font-size: 22px;
+            font-weight: 600;
+            padding: 1rem;
+            color: $dark-blue2;
+            background-color: rgba(230,231,238,.85);
+            background-clip: padding-box;
+            border-bottom: 1px solid $light-blue;
+        }
+
+        ul {
+            padding: 10px 38px 5px;
+        }
+    }
+}

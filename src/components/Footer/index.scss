@@ -1,0 +1,28 @@
+@import "../../global.scss";
+
+footer {
+    background: $header-background;
+    border-top: 1px solid transparent;
+    bottom: 0;
+    color: $gray5;
+    font-size: 12px;
+    left: 0;
+    padding: 15px;
+    position: fixed;
+    text-align: center;
+    width: $header-width;
+    z-index: 9999;
+
+    .credits {
+        padding-top: 5px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1199px) {
+    footer {
+        border-top: 1px solid $light-blue;
+        position: absolute;
+        width: 100%;
+    }
+}

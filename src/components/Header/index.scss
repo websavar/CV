@@ -1,0 +1,62 @@
+@import '../../global.scss';
+
+header {
+    background: $header-background;
+    bottom: 0;
+    box-shadow: #abb1bad1 1px 3px 4px, #cccede85 0px 3px 4px;
+    height: 100%;
+    left: 0;
+    overflow-y: auto;
+    padding: 0 15px;
+    position: fixed;
+    top: 0;
+    width: $header-width;
+    z-index: 9997;
+
+    &> div {
+        height: 100%;
+    }
+
+    .profile {
+        background-color: $profile-background-color;
+        border: $profile-border-size solid $profile-border-color;
+        border-radius: .55rem;
+        box-shadow: 2px 2px 4px $profile-shadow-color, -2px -2px 4px $white;
+        margin-top: 3rem;
+        padding: 10px;
+
+        .avatar {
+            background-color: $profile-background-color;
+            border: $profile-border-size solid $avatar-border-color;
+            border-color: $light-blue;
+            border-radius: 50%;
+            box-shadow: inset 2px 2px 5px $profile-shadow-color, inset -3px -3px 7px $white;
+            height: $avatar-size;
+            margin: auto;
+            margin-top: -3rem;
+            padding: 7px;
+            width: $avatar-size;
+        }
+        
+        h1 {
+            font-family: "Poppins", sans-serif;
+            font-size: 1.25rem;
+            font-weight: 400;
+            margin-top: 10px;
+            padding: 0;
+            text-align-last: center;
+            -moz-text-align-last: center;
+
+            a, a:hover {
+                color: $dark-blue2;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    header {
+        left: -$header-width;
+    }
+}

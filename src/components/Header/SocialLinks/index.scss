@@ -1,0 +1,20 @@
+@import '../../../global.scss';
+
+.social-links {
+    a {
+        color: $dark-blue2;
+        display: inline-block;
+        font-size: 22px;
+        height: $social-media-size;
+        line-height: 1;
+        padding: 8px 0;
+        text-align: center;
+        transition: 0.3s;
+        width: $social-media-size;
+    }
+
+    a:hover {
+        color: $link-color;
+        text-decoration: none;
+    }
+}

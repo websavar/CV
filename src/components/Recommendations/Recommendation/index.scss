@@ -1,0 +1,77 @@
+@import '../../../global.scss';
+
+.recommendations {
+
+    .recommendations-slider {
+        margin-bottom: 30px;
+    }
+
+    .recommendation-item {
+        box-sizing: content-box;
+        min-height: 320px;
+        text-align: center;
+
+        .recommendation-img {
+            border-radius: 50%;
+            margin: 0 auto;
+            width: $testimonial-image-size;
+        }
+
+        h3 {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 10px 0 5px 0;
+            color: $dark-blue5;
+        }
+
+        h4 {
+            font-size: 14px;
+            color: $gray4;
+            margin: 0;
+        }
+
+        .quote-icon-left,
+        .quote-icon-right {
+            color: $gray4;
+            font-size: 20px;
+        }
+
+        .quote-icon-left {
+            display: inline-block;
+            left: -10px;
+            position: relative;
+        }
+
+        .quote-icon-right {
+            display: inline-block;
+            right: -10px;
+            position: relative;
+            top: 10px;
+        }
+
+        p {
+            font-style: italic;
+            margin: 0 15px 15px 15px;
+            cursor: grab;
+            padding: 25px 20px;
+            background: $recommendation-bg-color;
+            position: relative;
+            margin-bottom: 35px;
+            border-radius: 6px;
+            border: 1px solid $light-blue;
+            box-shadow: inset 2px 2px 5px #dfe0e5, inset -3px -3px 3px $white;
+
+            &::after {
+                bottom: calc(#{$recommendation-arrow-size} * -1);
+                content: "";
+                border-left: $recommendation-arrow-size solid transparent;
+                border-right: $recommendation-arrow-size solid transparent;
+                border-top: $recommendation-arrow-size solid $recommendation-arrow-color;
+                height: 0;
+                left: calc(50% - #{$recommendation-arrow-size});
+                position: absolute;
+                width: 0;
+            }
+        }
+    }
+}

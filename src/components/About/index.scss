@@ -1,0 +1,34 @@
+@import '../../global.scss';
+
+#about .content {
+    h3 {
+        color: $dark-blue;
+        font-size: 26px;
+        font-weight: 700;
+    }
+
+    ul.perspective {
+        list-style: none;
+        margin-bottom: 22px;
+        margin-top: 15px;
+        padding-left: 17px;
+
+        li {
+            margin-bottom: 6px;
+
+            &::before {
+                color: $purple;
+                content: "\2022";
+                display: inline-block; 
+                font-weight: bold;
+                margin-left: -1em;
+                width: 1em;
+            }
+        }
+    }
+
+    .spec ul {
+        padding-left: 0;
+    }
+}
+

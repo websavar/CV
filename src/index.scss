@@ -1,0 +1,104 @@
+@import './global.scss';
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: $body-font-color;
+    height: 100vh;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+a {
+    color: $link-color;
+    text-decoration: none;
+    transition: 0.15s;
+    
+    &:hover {
+        color: $link-hover-color;
+        text-decoration: none;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway", sans-serif;
+}
+
+#root {
+    min-height: 100%;
+    position: relative;
+}
+
+section {
+    box-shadow: #c0c2d54d 0px 3px 6px, #b3b6ce59 0px 2px 4px;
+    padding: 40px 0;
+    overflow: hidden;
+}
+
+main {
+    padding-bottom: 5px;
+
+    section {
+        border-radius: 4px 4px 6px 6px;
+        border: 1px solid $gray2;
+        margin: 20px 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 5px;
+    }
+}
+
+.section-bg {
+    background: $section-bg-color;
+}
+
+.section-title {
+    padding-bottom: 30px;
+
+    h2 {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        position: relative;
+        color: $dark-blue;
+        text-transform: capitalize;
+        width: fit-content;
+
+        &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 3px;
+            background: $link-color;
+            bottom: 0;
+            left: 0;
+        }
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+}
+
+main, .page-not-found {
+    margin-left: $header-width;
+}
+
+@media (max-width: 1199px) {
+    main,
+    .page-not-found {
+        margin-left: 0;
+        padding-bottom: 70px;
+    }
+}

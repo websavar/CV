@@ -1,0 +1,44 @@
+@import '../../../global.scss';
+
+.personal_card {
+    background-clip: border-box;
+    background-color: $profile-background-color;
+    border: .07rem solid $light-blue2;
+    border-color: $light-blue;
+    border-radius: .4rem;
+    box-shadow: 6px 6px 12px $light-blue,-6px -6px 12px $white;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    min-width: 0;
+    word-wrap: break-word;
+
+    .card-header {
+        color: $dark-blue2;
+        font-size: 20px;
+        font-weight: 600;
+        padding: .7rem 2rem;
+    }
+
+    .card-body {
+        flex: 1 1 auto;
+        padding: 0.5rem 1rem;
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                background-color: transparent;
+                border-bottom: .07rem solid $light-blue;
+                color: $gray5;
+                padding: 0.9rem 1rem;
+
+                &:last-child {
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,83 @@
+@import '../../../../global.scss';
+
+.form-group {
+    margin-bottom: 5px;
+    
+    .input-group {
+        align-items: stretch;
+        box-shadow: inset 2px 2px 5px $profile-shadow-color, inset -3px -3px 7px $white;
+        border-radius: .5rem;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        transition: all .2s ease;
+        width: 100%;
+
+        .input-group-prepend {
+            display: flex;
+            margin-right: -.0625rem;
+
+            .input-group-text {
+                border-radius: .55rem 0 0 .55rem;
+                color: #44476a;
+            }
+        }
+
+        .form-control {
+            font-weight: 300;
+            font-size: 1rem;
+            border-radius: 0 .35rem .35rem 0;
+            box-shadow: inset 2px 2px 5px $profile-shadow-color, inset -3px -3px 7px $white;
+            padding: .6rem .75rem;
+            color: #44476a;
+            background-color: #eff0f3;
+            background-clip: padding-box;
+            border: .0625rem solid $light-blue;
+
+            &:not(:first-child) {
+                border-left: 0;
+                position: relative;
+                flex: 1 1 auto;
+                width: 1%;
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    label {
+        color: $dark-blue2;
+        font-size: .875rem;
+        margin-bottom: .3rem;
+        text-transform: capitalize;
+    }
+
+    input, textarea {
+        border-radius: 0;
+        box-shadow: none;
+        font-size: 14px;
+    }
+
+    input {
+        height: 44px;
+    }
+
+    textarea {
+        padding: 10px 15px;
+    }
+}
+
+button[type="submit"] {
+    border: 1px solid $light-blue;
+    border-radius: 5px;
+    box-shadow: 1px 2px 5px $light-blue2, -2px -3px 5px $white;
+    color: $light-blue5;
+    margin-bottom: 10px;
+    padding: .65rem 2.85rem;
+    transition: all .2s ease;
+    transition: 0.4s;
+
+    &:hover {
+        background-color: $profile-background-color;
+        box-shadow: inset 2px 2px 5px $profile-shadow-color, inset -3px -3px 7px $white;
+    }
+}
