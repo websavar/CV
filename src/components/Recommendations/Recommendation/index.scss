@@ -59,7 +59,7 @@
             margin-bottom: 35px;
             border-radius: 6px;
             border: 1px solid $light-blue;
-            box-shadow: inset 2px 2px 5px #dfe0e5, inset -3px -3px 3px $white;
+            box-shadow: inset 2px 2px 5px $light-blue1, inset -3px -3px 3px $white;
 
             &::after {
                 bottom: calc(#{$recommendation-arrow-size} * -1);

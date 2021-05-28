@@ -38,7 +38,7 @@ const About = () => {
 
                 <div className="row">
                     <div className="col-lg-4" data-aos="fade-right">
-                        <img src={data.home.avatar_url} className="img-fluid"
+                        <img src={data.about.about_url} className="img-fluid"
                             alt={`${data.home.firstname} ${data.home.lastname}`} />
                     </div>
                     <div className="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">

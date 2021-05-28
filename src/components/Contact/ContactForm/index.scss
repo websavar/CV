@@ -3,10 +3,10 @@
 .email-form {
     padding: 20px;
     width: 100%;
-    border: 1px solid $light-blue;
-    border-radius: 4px;
+    border: 1px solid $light-blue1;
+    border-radius: .4rem;
     background-color: $profile-background-color;
-    box-shadow: 2px 6px 7px $profile-shadow-color;
+    box-shadow: $column-box-shadow;
 
     .messages {
         text-align: center;

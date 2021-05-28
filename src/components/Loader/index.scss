@@ -19,6 +19,10 @@
 
     &.margin-left {
         margin-left: $header-width;
+        
+        @media (max-width: 1199px) {
+            margin-left: 0;
+        }
     }
 }
 
@@ -40,19 +44,16 @@
 
     &.margin-left {
         margin-left: calc(#{$header-width} - 0.75rem);
+
+        @media (max-width: 1199px) {
+            margin-left: 0;
+        }
     }
 }
 
 @keyframes loadingspin {
     100% {
         transform: rotate(360deg)
-    }
-}
-
-@media (max-width: 1199px) {
-    .loading-spinner.margin-left,
-    .loading-gradient.margin-left {
-        margin-left: 0;
     }
 }
 
@@ -64,3 +65,4 @@
         background-position: 468px 0
     }
 }
+

@@ -2,13 +2,15 @@
 
 html {
     font-size: 16px;
+    height: 100%;
 }
 
 body {
+    min-height: 100%;
     margin: 0;
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
     color: $body-font-color;
-    height: 100vh;
+    height: 97vh;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -39,7 +41,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 section {
-    box-shadow: #c0c2d54d 0px 3px 6px, #b3b6ce59 0px 2px 4px;
+    box-shadow: $section-box-shadow;
     padding: 40px 0;
     overflow: hidden;
 }
@@ -93,11 +95,8 @@ main {
 
 main, .page-not-found {
     margin-left: $header-width;
-}
 
-@media (max-width: 1199px) {
-    main,
-    .page-not-found {
+    @media (max-width: 1199px) {
         margin-left: 0;
         padding-bottom: 70px;
     }

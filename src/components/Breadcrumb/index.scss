@@ -31,20 +31,14 @@
         }
         
     }
-}
 
-@media (max-width: 768px) {
-    .breadcrumbs {
+    @media (max-width: 500px) {
         .d-flex {
             display: block !important;
         }
 
-        ol {
-            display: block;
-    
-            li {
-                display: inline-block;
-            }
+        ol li {
+            display: inline-block;
         }
     }
 }

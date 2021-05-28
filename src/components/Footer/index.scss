@@ -17,10 +17,8 @@ footer {
         padding-top: 5px;
         text-align: center;
     }
-}
-
-@media (max-width: 1199px) {
-    footer {
+    
+    @media (max-width: 1199px) {
         border-top: 1px solid $light-blue;
         position: absolute;
         width: 100%;

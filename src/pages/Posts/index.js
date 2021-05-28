@@ -1,11 +1,11 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams, useHistory } from "react-router-dom";
 
-import { slideHandler } from '../../utils';
 import './index.scss';
 import gate from '../../gate/index';
 import Loader from '../../components/Loader';
 import Breadcrumb from '../../components/Breadcrumb';
+import Slider from '../../components/Slider';
 
 const Posts = () => {
     const history = useHistory();
@@ -28,17 +28,6 @@ const Posts = () => {
         fetchData();
     }, [history, title]);
 
-    const swiperRef = useRef();
-    useEffect(() => {
-        if (swiperRef.current)
-            slideHandler({
-                speed: 500,
-                loop: imagesNumber > 1 ? true : false,
-                delay: 4000,
-                type: imagesNumber > 1 ? 'bullets' : 'custom'
-            });
-    });
-
     if (loading) return <Loader type="gradient" margin="true" />;
     return (
         <main id="main">
@@ -50,18 +39,7 @@ const Posts = () => {
                     <div className="row gy-4">
 
                         <div className="col-lg-8">
-                            <div ref={swiperRef} className="portfolio-details-slider swiper-container">
-                                <div className="swiper-wrapper align-items-center">
-                                    {data.images.map((image, i) => {
-                                        return (
-                                            <div key={i} className="swiper-slide">
-                                                <img src={image} alt={data.title} />
-                                            </div>
-                                        )
-                                    })}
-                                </div>
-                                <div className="swiper-pagination"></div>
-                            </div>
+                            <Slider imagesNumber={imagesNumber} data={data} />
                         </div>
 
                         <div className="col-lg-4">

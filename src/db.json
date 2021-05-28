@@ -10,6 +10,7 @@
         },
         "about": {
             "description": "Proficient front-end web developer with 5+ years of experience in user-friendly website design and development. Experienced in SEO and analyzing the websites. Utilized design skills to adapt customization to current designs while improving UI/UX. Passionate about continuous improvement, teamwork, good manners, social skills, customer satisfaction, energetic and enthusiastic with an ability to learn and adapt quickly. Hope to work with a professional team as full-time to learn more.",
+            "about_url": "/img/profile-about.jpg",
             "positions": [
                 "Frontend Developer",
                 "Web Developer",
@@ -17,8 +18,8 @@
             ],
             "perspectives": [
                 "Interested to obtain a challenging position as Frontend Web Developer",
-                "Motivated to learn and use new technologies",
-                "Seeking large cutting edge company"
+                "Motivated to learn and use new and modern technologies",
+                "Looking for a growing company"
             ],
             "personal_info": [
                 {

@@ -53,10 +53,8 @@ header {
             }
         }
     }
-}
 
-@media (max-width: 1199px) {
-    header {
+    @media (max-width: 1199px) {
         left: -$header-width;
     }
 }

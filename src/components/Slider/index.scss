@@ -1,22 +1,26 @@
 @import '../../global.scss';
 
-.recommendations {
+.swiper-container {
+    border-radius: 6px;
+
+    img {
+        width: 100%;
+    }
 
     .swiper-pagination {
         margin-top: 20px;
         position: relative;
 
         .swiper-pagination-bullet {
-            width: 12px;
-            height: 12px;
             background-color: $white;
-            opacity: 1;
             border: 1px solid $link-color;
+            height: $swiper-bullet-size;
+            opacity: 1;
+            width: $swiper-bullet-size;
         }
 
         .swiper-pagination-bullet-active {
             background-color: $link-color;
         }
     }
-    
 }
