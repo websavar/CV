@@ -4,8 +4,6 @@
 - [Dependencies](#dependencies)
 - [Setup and Run](#setup-run)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 <a name="#goal"></a>
 ## Goal
 Create a simple and dynamic website with modern JavaScript framework (React) that displays my ability and creativity. This is a SPA (Single Page Application) that services my CV with links to projects, recommendations and something about me.
@@ -32,5 +30,4 @@ Create a simple and dynamic website with modern JavaScript framework (React) tha
 <a name="#setup-run"></a>
 ## Setup and run
 1. Run `npm install` to install required dependencies
-2. Run `npm run backend` to run the json database on http://localhost:5000/content
-3. Run `npm run start` to run the project and Open http://localhost:3000
+2. Run `npm run start` to run the project and Open http://localhost:3000

@@ -1,24 +1,24 @@
 @import '../../../global.scss';
 
 .mobile-nav-toggle {
-    position: fixed;
-    right: 15px;
-    top: 15px;
-    z-index: 9998;
-    border: 0;
-    font-size: 21px;
-    transition: all 0.4s;
-    outline: none !important;
-    background-color: $link-color;
-    color: $white;
-    width: $mobile-nav-toggle-size;
-    height: $mobile-nav-toggle-size;
-    display: inline-flex;
     align-items: center;
+    background-color: $link-color;
+    border: 0;
+    border-radius: 50px;
+    color: $white;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 21px;
+    height: $mobile-nav-toggle-size;
     justify-content: center;
     line-height: 0;
-    border-radius: 50px;
-    cursor: pointer;
+    outline: none;
+    position: fixed;
+    right: 15px;
+    transition: all 0.4s;
+    top: 15px;
+    width: $mobile-nav-toggle-size;
+    z-index: 9998;
 }
 
 .mobile-nav-active {

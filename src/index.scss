@@ -6,11 +6,11 @@ html {
 }
 
 body {
-    min-height: 100%;
-    margin: 0;
-    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
     color: $body-font-color;
-    height: 97vh;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 100vh;
+    margin: 0;
+    min-height: 100%;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -47,15 +47,15 @@ section {
 }
 
 main {
-    padding-bottom: 5px;
+    padding: 10px 0;
 
     section {
-        border-radius: 4px 4px 6px 6px;
         border: 1px solid $gray2;
-        margin: 20px 15px;
+        border-radius: 4px 4px 6px 6px;
+        margin: 0 20px 20px;
+        padding-bottom: 5px;
         padding-left: 10px;
         padding-right: 10px;
-        padding-bottom: 5px;
     }
 }
 
@@ -67,24 +67,24 @@ main {
     padding-bottom: 30px;
 
     h2 {
+        color: $dark-blue;
         font-size: 2rem;
         font-weight: bold;
         margin-bottom: 20px;
         padding-bottom: 10px;
         position: relative;
-        color: $dark-blue;
         text-transform: capitalize;
         width: fit-content;
 
         &::after {
-            content: '';
-            position: absolute;
-            display: block;
-            width: 100%;
-            height: 3px;
             background: $link-color;
             bottom: 0;
+            content: '';
+            display: block;
+            height: 3px;
             left: 0;
+            position: absolute;
+            width: 100%;
         }
     }
 
