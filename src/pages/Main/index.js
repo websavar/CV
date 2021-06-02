@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { mobileNavToggle } from '../../utils';
 import Home from '../../components/Home';
 import About from '../../components/About';
 import Skills from '../../components/Skills';
@@ -11,9 +12,9 @@ import Contact from '../../components/Contact';
 
 const Main = () => {
     return (
-        <>
+        <main onClick={mobileNavToggle}>
             <Home />
-            <main>
+            <div className="main">
                 <About />
                 <Skills />
                 <Experience type="work_experience" />
@@ -22,8 +23,8 @@ const Main = () => {
                 <PersonalSkills />
                 <Recommendations />
                 <Contact />
-            </main>
-        </>
+            </div>
+        </main>
     )
 }
 

@@ -52,3 +52,13 @@ window.addEventListener('load', () => {
     }
 });
 
+// Toggle switch active for mobile-nav button
+export const mobileNavToggle = (e) => {
+    const body = document.querySelector('body');
+    const toggleIcon = e.target;
+    if (toggleIcon.classList.value.includes('mobile-nav-toggle') || body.classList.value.includes('mobile-nav-active')) {
+        body.classList.toggle('mobile-nav-active');
+        document.querySelector('.mobile-nav-toggle').classList.toggle('fa-times');
+    }
+}
+

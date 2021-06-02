@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useHistory } from "react-router-dom";
 
+import { mobileNavToggle } from '../../utils';
 import './index.scss';
 import gate from '../../gate/index';
 import Loader from '../../components/Loader';
@@ -30,7 +31,7 @@ const Posts = () => {
 
     if (loading) return <Loader type="gradient" margin="true" />;
     return (
-        <main id="main">
+        <main className="main" onClick={mobileNavToggle}>
 
             <Breadcrumb title={data.title} />
 

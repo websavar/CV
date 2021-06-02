@@ -1,28 +1,28 @@
 @import '../../../global.scss';
 
 .mobile-nav-toggle {
+    align-items: center;
+    background-color: $link-color;
+    border-radius: 50px;
+    color: $white;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 21px;
+    height: $mobile-nav-toggle-size;
+    justify-content: center;
     position: fixed;
     right: 15px;
-    top: 15px;
-    z-index: 9998;
-    border: 0;
-    font-size: 21px;
     transition: all 0.4s;
-    outline: none !important;
-    background-color: $link-color;
-    color: $white;
+    top: 15px;
     width: $mobile-nav-toggle-size;
-    height: $mobile-nav-toggle-size;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    line-height: 0;
-    border-radius: 50px;
-    cursor: pointer;
+
+    &:hover {
+        background-color: $light-blue5;
+    }
 }
 
 .mobile-nav-active {
-    overflow: hidden;
+    // overflow: hidden;
 
     #header {
         left: 0;

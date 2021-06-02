@@ -34,11 +34,11 @@
         animation-name: placeHolderShimmer;
         animation-timing-function: linear;
         background: $loading-gradient-bg-color;
-        background: linear-gradient(to right, #eeeeee 10%, #dddddd 18%, #eeeeee 33%);
+        background: linear-gradient(to right, #eee 10%, #ddd 18%, #eee 33%);
         background-size: 800px 104px;
         border-radius: 3px;
         height: $loading-gradient-height;
-        margin: 20px;
+        margin: 15px;
         width: $loading-gradient-width;
     }
 
@@ -46,7 +46,7 @@
         margin-left: calc(#{$header-width} - 0.75rem);
 
         @media (max-width: 1199px) {
-            margin-left: 0;
+            margin-left: -0.75rem;
         }
     }
 }
