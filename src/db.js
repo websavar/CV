@@ -93,6 +93,22 @@ const content = {
         items: [
             {
                 title: "Frontend Developer",
+                company: "Lowell",
+                link: "https://www.linkedin.com/company/lowell-group",
+                city: "Berlin",
+                country: "Germany",
+                start_date: "Jul 2021",
+                end_date: "Present",
+                items: [
+                    "Build Single page applications based on React or Vue",
+                    "Development of microservices in agile teams for cloud systems",
+                    "Translated mockups, designs, and wireframes into high-quality code",
+                    "Support in defining and developing the backend APIs (gRPC, REST)",
+                    "Creation and optimization of CI/CD pipelines, including test automation"
+                ],
+                projects: "Lowell group Portals Frontend"
+            },            {
+                title: "Frontend Developer",
                 company: "evoach",
                 link: "https://www.evoach.me",
                 city: "Karlsruhe",
