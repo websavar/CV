@@ -6,7 +6,9 @@ const Footer = () => {
     return (
         <footer>
             <div className="container">
-                <div>&copy; Copyright 2021</div>
+                <div>&copy; Copyright 2022 | 
+                    <span>Source code: <a href="https://github.com/websavar/CV" target="_blacnk" rel="noreferre">CV</a></span>
+                </div>
                 <div className="credits">
                     Implemeneted by &nbsp;
                     <a href="http://websavar.com/" target="_blacnk" rel="noreferre">
